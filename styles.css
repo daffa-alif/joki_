@@ -1,0 +1,195 @@
+/* Style your navbar here */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(img/background.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: top 0.3s;
+}
+
+.nav-buttons {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(20, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 28% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    transition: background-color 0.5s ease-out;
+}
+
+button:hover  {
+    background-color: burlywood;
+    box-shadow: 2px;
+    transition: background-color 0.5s ease-out;
+}
+
+.content {
+    height: 2000px; /* Just for demonstration purpose */
+}
+
+#home {
+    padding-top: 80px;
+}
+
+.welcome {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+
+.desc {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+.main-list {
+    background-color: black;
+    background-size: cover;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.list-joki ,.list-harga {
+    list-style: none;
+}
+
+#time {
+    padding-top: 80px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.dana {
+    width: 300px;
+    justify-content: center;
+}
+
+.work {
+    
+    padding-top: 80px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.work-des, .revisi {
+    font-size: 20px;
+}
+
+.revisi {
+    padding-top: 20px;
+}
+
+.payment {
+    padding-top: 80px;
+    font-size: 20px;
+}
+
+.social-media {
+    padding-top: 80px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.instagram {
+    width: 220px;
+    padding-top: 20px;
+}
+
+#contact {
+    padding-top: 80px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;   
+}
+
+.whatsapp {
+    width: 275px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+@media screen and (max-width: 750px) {
+    .desc {
+        font-size: 20px;
+    }
+    .main-list {
+        font-size: 11px;
+    }
+
+    .joki, .harga {
+        padding: 15px;
+    }
+}
